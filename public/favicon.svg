@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- DermaCare leaf / droplet icon in new color theme -->
+  <path d="M32 6C32 6 12 24 12 38C12 49.0457 20.9543 58 32 58C43.0457 58 52 49.0457 52 38C52 24 32 6 32 6Z" fill="#E885CF" opacity="0.35"/>
+  <path d="M22 20C22 20 16 30 16 38C16 46.8366 23.1634 54 32 54C40.8366 54 48 46.8366 48 38C48 34 46 29 42 25C37 36 29 42 22 20Z" fill="#7F27A8"/>
+  <path d="M26 14C26 14 36 24 38 36C40 46 32 52 32 52C40 50 46 44 46 37C46 26 31 16 26 14Z" fill="#FFD400"/>
+</svg>
