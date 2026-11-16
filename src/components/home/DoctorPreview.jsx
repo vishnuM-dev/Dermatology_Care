@@ -17,7 +17,15 @@ export const DoctorPreview = () => {
             {/* Left Column: Doctor Portrait with Rounded Frame */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-full max-w-[320px] aspect-[4/5] rounded-3xl overflow-hidden shadow-soft-lg bg-derma-kombu-subtle border-2 border-derma-border">
-                <img src={leadDoctor.image} alt={`${leadDoctor.name} - ${leadDoctor.role}`} className="w-full h-full object-cover object-top"/>
+                <img
+                  src={leadDoctor.image}
+                  alt={`${leadDoctor.name} - ${leadDoctor.role}`}
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80';
+                  }}
+                  className="w-full h-full object-cover object-top"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-derma-purple-deep/75 via-transparent to-transparent pointer-events-none"/>
 
                 <div className="absolute bottom-4 left-4 right-4 text-white">

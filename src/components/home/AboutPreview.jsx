@@ -26,7 +26,15 @@ export const AboutPreview = () => {
           {/* Left Column: Clinic Imagery & Decorative Elements */}
           <div className="lg:col-span-6 relative">
             <motion.div initial={{ opacity: 0, scale: 0.96 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="relative rounded-3xl overflow-hidden shadow-soft-lg border border-derma-border bg-derma-kombu-subtle">
-              <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80" alt="DermaCare State-of-the-art Medical Clinic" className="w-full aspect-[4/3] object-cover object-center"/>
+              <img
+                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80"
+                alt="DermaCare State-of-the-art Medical Clinic"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80';
+                }}
+                className="w-full aspect-[4/3] object-cover object-center"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-derma-purple-deep/40 via-transparent to-transparent pointer-events-none"/>
 
               {/* Floating clinic badge */}

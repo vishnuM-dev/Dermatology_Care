@@ -67,7 +67,7 @@ export const DOCTORS = [
         title: 'MD, Aesthetic Specialist',
         role: 'Aesthetic Dermatologist & Laser Specialist',
         qualification: 'MD, Laser & Phototherapy Fellow (Demo Profile)',
-        image: 'https://images.unsplash.com/photo-1594824813563-3932788e2802?auto=format&fit=crop&w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=80',
         bio: 'Dr. Elena Vance is an aesthetic laser practitioner focused on non-surgical collagen regeneration, vascular skin conditions, and pigment remodeling with ultra-gentle optical devices.',
         quote: 'Modern optical dermatology allows us to reverse environmental photodamage while honoring each patient’s unique contours.',
         specializations: [

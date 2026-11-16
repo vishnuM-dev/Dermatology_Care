@@ -106,7 +106,15 @@ export const HeroSection = () => {
 
               {/* Natural Close-up Skincare Portrait */}
               <div className="relative w-[88%] h-[88%] rounded-full overflow-hidden shadow-soft-lg border-4 border-white bg-derma-kombu-subtle">
-                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1000&q=85" alt="Healthy, glowing natural skin portrait - DermaCare" className="w-full h-full object-cover object-top filter brightness-[1.02] contrast-[1.02]"/>
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1000&q=85"
+                  alt="Healthy, glowing natural skin portrait - DermaCare"
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1000&q=85';
+                  }}
+                  className="w-full h-full object-cover object-top filter brightness-[1.02] contrast-[1.02]"
+                />
                 {/* Soft gradient blend at edges */}
                 <div className="absolute inset-0 bg-gradient-to-t from-derma-blue/20 via-transparent to-transparent pointer-events-none"/>
               </div>

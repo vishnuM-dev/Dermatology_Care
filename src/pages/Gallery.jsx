@@ -53,7 +53,15 @@ export const Gallery = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {filteredItems.map((item) => (<div key={item.id} onClick={() => setLightboxItem(item)} className="group relative rounded-3xl overflow-hidden bg-derma-kombu-subtle border border-derma-border shadow-soft hover:shadow-soft-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
                 <div className="aspect-[4/3] w-full overflow-hidden">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108"/>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80';
+                    }}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108"
+                  />
                 </div>
 
                 {/* Overlay on hover in theme purple gradient */}
@@ -95,7 +103,15 @@ export const Gallery = () => {
             </button>
 
             <div className="relative aspect-[16/10] bg-derma-kombu-subtle">
-              <img src={lightboxItem.image} alt={lightboxItem.title} className="w-full h-full object-cover"/>
+              <img
+                src={lightboxItem.image}
+                alt={lightboxItem.title}
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80';
+                }}
+                className="w-full h-full object-cover"
+              />
               <div className="absolute top-4 left-4 bg-derma-purple-deep/90 text-derma-yellow text-xs font-bold px-3 py-1 rounded-full backdrop-blur-md">
                 {lightboxItem.categoryLabel}
               </div>

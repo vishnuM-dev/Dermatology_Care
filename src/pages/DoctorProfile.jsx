@@ -38,7 +38,15 @@ export const DoctorProfile = () => {
             {/* Left Photo & Fast Facts */}
             <div className="lg:col-span-4 flex flex-col items-center sm:items-start space-y-6">
               <div className="relative w-full max-w-[320px] aspect-[4/5] rounded-3xl overflow-hidden shadow-soft-lg border-2 border-derma-border bg-derma-kombu-subtle">
-                <img src={doctor.image} alt={doctor.name} className="w-full h-full object-cover object-top"/>
+                <img
+                  src={doctor.image}
+                  alt={doctor.name}
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80';
+                  }}
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
 
               {/* Consultation availability box */}

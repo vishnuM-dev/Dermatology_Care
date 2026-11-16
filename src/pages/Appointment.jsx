@@ -148,7 +148,15 @@ export const Appointment = () => {
                         ? 'border-derma-kombu bg-derma-kombu-subtle shadow-md'
                         : 'border-derma-border bg-white hover:border-derma-kombu/40'}`}>
                     <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-derma-kombu-subtle border border-derma-border">
-                      <img src={treatment.image} alt={treatment.title} className="w-full h-full object-cover"/>
+                      <img
+                        src={treatment.image}
+                        alt={treatment.title}
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80';
+                        }}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between">
@@ -189,7 +197,15 @@ export const Appointment = () => {
                         ? 'border-derma-kombu bg-derma-kombu-subtle shadow-md'
                         : 'border-derma-border bg-white hover:border-derma-kombu/40'}`}>
                     <div className="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-derma-border">
-                      <img src={doc.image} alt={doc.name} className="w-full h-full object-cover object-top"/>
+                      <img
+                        src={doc.image}
+                        alt={doc.name}
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80';
+                        }}
+                        className="w-full h-full object-cover object-top"
+                      />
                     </div>
                     <h3 className="text-sm font-bold text-derma-purple">{doc.name}</h3>
                     <p className="text-xs text-derma-kombu font-semibold mt-0.5">{doc.role}</p>

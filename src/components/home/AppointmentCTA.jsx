@@ -11,7 +11,15 @@ export const AppointmentCTA = () => {
             
             {/* Left Side: Modern Clinic Reception Image */}
             <div className="lg:col-span-5 relative min-h-[240px] sm:min-h-[280px] lg:min-h-full overflow-hidden bg-derma-kombu-subtle">
-              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" alt="DermaCare Modern Clinic Reception" className="w-full h-full object-cover object-center"/>
+              <img
+                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80"
+                alt="DermaCare Modern Clinic Reception"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = 'https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1000&q=80';
+                }}
+                className="w-full h-full object-cover object-center"
+              />
               
               {/* Clinic wall logo badge */}
               <div className="absolute top-6 left-6 glass-panel px-3.5 py-2 rounded-2xl flex items-center gap-2.5 shadow-sm border border-white/60">

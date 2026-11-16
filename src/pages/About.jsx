@@ -76,7 +76,15 @@ export const About = () => {
 
             <div className="lg:col-span-6 relative">
               <div className="relative rounded-3xl overflow-hidden shadow-soft-lg border-2 border-derma-border bg-derma-kombu-subtle">
-                <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1000&q=80" alt="Modern DermaCare consultation room" className="w-full aspect-[4/3] object-cover"/>
+                <img
+                  src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1000&q=80"
+                  alt="Modern DermaCare consultation room"
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80';
+                  }}
+                  className="w-full aspect-[4/3] object-cover"
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 hidden sm:block w-48 h-48 bg-derma-pink/20 rounded-full blur-2xl -z-10"/>
             </div>

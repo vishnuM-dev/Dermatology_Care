@@ -61,7 +61,7 @@ export const TREATMENTS = [
         category: 'skin',
         categoryLabel: 'Skin Care',
         iconName: 'pigmentation',
-        image: 'https://images.unsplash.com/photo-1512290900672-1f55b9e07567?auto=format&fit=crop&w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80',
         concerns: [
             'Melasma and hormonal discoloration',
             'Sunspots, age spots, and freckles',
@@ -265,7 +265,7 @@ export const TREATMENTS = [
         category: 'skin',
         categoryLabel: 'Skin Care',
         iconName: 'shield',
-        image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0d0?auto=format&fit=crop&w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
         concerns: [
             'Surface roughness and flaky skin',
             'Enlarged congested pores',

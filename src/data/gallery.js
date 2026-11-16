@@ -4,7 +4,7 @@ export const GALLERY_ITEMS = [
         title: 'Acne Scar Smoothing & Barrier Renewal',
         category: 'skin',
         categoryLabel: 'Skin Care',
-        image: 'https://images.unsplash.com/photo-1512290900672-1f55b9e07567?auto=format&fit=crop&w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80',
         description: 'Progress demonstration following a 4-session fractional resurfacing and soothing peptide protocol. (Illustrative Clinical Demo)',
         tag: 'Skin Restoration'
     },
@@ -67,7 +67,7 @@ export const GALLERY_ITEMS = [
         title: 'Micro-Needling Collagen Induction',
         category: 'skin',
         categoryLabel: 'Skin Care',
-        image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0d0?auto=format&fit=crop&w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80',
         description: 'Controlled micro-punctures stimulating natural elastin synthesis and pore tightening.',
         tag: 'Skin Remodeling'
     }
